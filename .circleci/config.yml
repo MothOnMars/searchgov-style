@@ -10,8 +10,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Which bundler?
-          command: bundle -v
+          name: Install Bundler
+          command: gem install bundler:2.1.4
       - ruby/bundle-install
             # Once lower-level offenses are resolved, the fail-level flags should be removed
       # so that any offense will cause the build to fail.
