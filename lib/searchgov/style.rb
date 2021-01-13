@@ -1,4 +1,4 @@
-require "searchgov/style/version"
+require 'searchgov/style/version'
 
 module Searchgov
   module Style
