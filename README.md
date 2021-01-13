@@ -22,7 +22,23 @@ Or install it yourself as:
 
 ## Usage
 
-Refer to the [Rubocop documentation](https://docs.rubocop.org/) for usage instructions.
+In the root directory of the repo using this gem, create a `.rubocop.yml` with the following directives:
+
+```yaml
+inherit_gem:
+  searchgov-style:
+    - default.yml
+```
+
+Now, run:
+
+```bash
+$ bundle exec rubocop
+```
+
+You do not need to include rubocop directly in your application's dependencies. searchgov-style will include a specific version of `rubocop` and related gems (such as `rubocop-rspec`) that is shared across all projects.
+
+Refer to the [Rubocop documentation](https://docs.rubocop.org/) for Rubocop usage instructions.
 
 ## Development
 
