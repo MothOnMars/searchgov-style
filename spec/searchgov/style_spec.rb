@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 RSpec.describe Searchgov::Style do
   it 'has a version number' do
     expect(Searchgov::Style::VERSION).not_to be nil
