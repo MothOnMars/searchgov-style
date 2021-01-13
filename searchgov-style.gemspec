@@ -28,5 +28,7 @@ Gem::Specification.new do |spec|
 
   # add note re codeclimate
   # TODO: add codeclimate, circleci
+
+  spec.add_dependency 'bundler', '~> 2.1.4'
   spec.add_dependency 'rubocop', '1.7.0'
 end
