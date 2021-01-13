@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['MothOnMars']
   spec.email         = ['437455+MothOnMars@users.noreply.github.com']
 
-  spec.summary       = %q{Shared Rubocop configuration for Search.gov repositories}
+  spec.summary       = 'Shared Rubocop configuration for Search.gov repositories'
   spec.homepage      = 'https://github.com/GSA/searchgov_style'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.5.0')
@@ -33,4 +33,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'bundler', '~> 2.1.4'
   spec.add_dependency 'rubocop', '1.7.0'
+  spec.add_dependency 'rubocop-rake', '0.5'
+  spec.add_dependency 'rubocop-rspec', '2.1'
 end
