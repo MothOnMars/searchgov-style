@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-module Searchgov
-  module Style
-    VERSION = '0.1.0'
-  end
+module SearchgovStyle
+  VERSION = '0.1.0'
 end
