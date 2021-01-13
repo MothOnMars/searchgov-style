@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    searchgov-style (0.0.1)
+    searchgov-style (0.1.0)
       rubocop (= 1.7.0)
 
 GEM
