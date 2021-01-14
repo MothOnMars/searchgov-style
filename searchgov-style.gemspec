@@ -30,7 +30,8 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'bundler', '~> 2.1.4'
   spec.add_dependency 'rubocop', '1.7.0'
+  spec.add_dependency 'rubocop-performance', '~> 1.9'
   spec.add_dependency 'rubocop-rails', '~> 2.9'
-  spec.add_dependency 'rubocop-rake', '0.5'
-  spec.add_dependency 'rubocop-rspec', '2.1'
+  spec.add_dependency 'rubocop-rake', '~> 0.5'
+  spec.add_dependency 'rubocop-rspec', '~> 2.1'
 end
