@@ -92,10 +92,20 @@ RSpec/NestedGroups:
 Style/Documentation:
   Enabled: false
 
+Style/MethodCallWithArgsParentheses:
+  Description: 'Use parentheses for method calls with arguments.'
+  Enabled: true
+  IgnoredMethods: ['require']
+  Exclude:
+    - 'spec/**/*'
+    - 'Gemfile'
+    - 'db/**/*'
+    - '*.gemspec'
+
 Style/RescueStandardError:
   Enabled: false
 
 # i14y
 # DONE ASIS
 # NONE bot_detection
-# search-gov
+# DONE search-gov
