@@ -15,4 +15,6 @@ jobs:
       - ruby/bundle-install
       - run:
           name: Rubocop
+          # Codeclimate will also run Rubocop, but only on PRs.
+          # Running Rubocop in CircleCI allows us to see failures earlier
           command: bundle exec rubocop
