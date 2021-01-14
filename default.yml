@@ -1,13 +1,54 @@
+require: rubocop-rspec
+
 AllCops:
   NewCops: enable
   TargetRubyVersion: 2.5
 
+#### Bundler ####
+
+Bundler/OrderedGems:
+  Enabled: false
+
+#### Layout ####
+
 Layout/ExtraSpacing:
   AllowForAlignment: true
 
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+#### Metrics ####
+
+Metrics/BlockLength:
+  CountComments: false  # count full line comments?
+  Max: 25
+  ExcludedMethods:
+    # By default, exclude the `#refine` method, as it tends to have larger
+    # associated blocks.
+    - refine
+    # Rspec blocks
+    - describe
+    - context
+    - include_context
+    - shared_examples_for
+
+#### RSpec ####
+
+# See also the list of RSpec statements that we exempt from the block
+# length cop, under Metrics/BlockLength above
+
+RSpec/ExampleLength:
+  Enabled: false
+
 RSpec/ExpectChange:
-  Enabled: true
   EnforcedStyle: block
 
 RSpec/MultipleExpectations:
   Enabled: false
+
+RSpec/NestedGroups:
+  Enabled: false
+# i14y
+# DONE ASIS
+# NONE bot_detection
+# search-gov
