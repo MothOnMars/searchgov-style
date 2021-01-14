@@ -4,3 +4,10 @@ AllCops:
 
 Layout/ExtraSpacing:
   AllowForAlignment: true
+
+RSpec/ExpectChange:
+  Enabled: true
+  EnforcedStyle: block
+
+RSpec/MultipleExpectations:
+  Enabled: false
