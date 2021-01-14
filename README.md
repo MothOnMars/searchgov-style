@@ -27,7 +27,7 @@ In the root directory of the repo using this gem, create a `.rubocop.yml` with t
 ```yaml
 inherit_gem:
   searchgov_style:
-    - default.yml
+    - .default.yml
 ```
 
 Now, run:

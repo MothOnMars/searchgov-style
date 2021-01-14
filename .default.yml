@@ -1,5 +1,4 @@
 require:
-  #add more
   - rubocop-performance
   - rubocop-rails
   - rubocop-rake
@@ -15,6 +14,9 @@ Bundler/OrderedGems:
   Enabled: false
 
 #### Layout ####
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
 
 Layout/ExtraSpacing:
   AllowForAlignment: true
@@ -103,10 +105,9 @@ Style/MethodCallWithArgsParentheses:
     - 'db/**/*'
     - '*.gemspec'
 
+Style/MixinUsage:
+  Exclude:
+    - bin/*
+
 Style/RescueStandardError:
   Enabled: false
-
-# i14y
-# DONE ASIS
-# NONE bot_detection
-# DONE search-gov
