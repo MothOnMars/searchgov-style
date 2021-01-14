@@ -1,4 +1,4 @@
-# searchgov-style
+# searchgov_style
 
 Shared Rubocop configuration for Search.gov repositories
 
@@ -8,7 +8,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group :test, :development do
-  gem 'searchgov-style'
+  gem 'searchgov_style'
 end
 ```
 
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install searchgov-style
+    $ gem install searchgov_style
 
 ## Usage
 
@@ -26,7 +26,7 @@ In the root directory of the repo using this gem, create a `.rubocop.yml` with t
 
 ```yaml
 inherit_gem:
-  searchgov-style:
+  searchgov_style:
     - default.yml
 ```
 
@@ -36,7 +36,7 @@ Now, run:
 $ bundle exec rubocop
 ```
 
-You do not need to include rubocop directly in your application's dependencies. searchgov-style will include a specific version of `rubocop` and related gems (such as `rubocop-rspec`) that is shared across all projects.
+You do not need to include rubocop directly in your application's dependencies. searchgov_style will include a specific version of `rubocop` and related gems (such as `rubocop-rspec`) that is shared across all projects.
 
 Refer to the [Rubocop documentation](https://docs.rubocop.org/) for Rubocop usage instructions.
 
@@ -46,7 +46,7 @@ Refer to the [Rubocop documentation](https://docs.rubocop.org/) for Rubocop usag
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/searchgov-style.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/searchgov_style.
 
 
 ## License

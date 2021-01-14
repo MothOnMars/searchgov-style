@@ -1,4 +1,4 @@
-name: searchgov-style
+name: searchgov_style
 description: 'Shared Rubocop configuration for Search.gov repositories'
 license: 'https://creativecommons.org/publicdomain/zero/1.0'
 openSourceProject: 1
