@@ -5,7 +5,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.6.3-stretch-node
+      - image: circleci/ruby:2.5.8
     executor: ruby/default
     steps:
       - checkout
@@ -13,8 +13,6 @@ jobs:
           name: Install Bundler
           command: gem install bundler:2.1.4
       - ruby/bundle-install
-            # Once lower-level offenses are resolved, the fail-level flags should be removed
-      # so that any offense will cause the build to fail.
       - run:
           name: Rubocop
-          command: bundle exec rubocop #--fail-level warning --display-only-fail-level-offenses
+          command: bundle exec rubocop
