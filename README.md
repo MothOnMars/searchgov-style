@@ -14,7 +14,7 @@ end
 
 And then execute:
 
-    $ bundle install
+    $ bundle
 
 Or install it yourself as:
 
@@ -36,18 +36,23 @@ Now, run:
 $ bundle exec rubocop
 ```
 
-You do not need to include rubocop directly in your application's dependencies. searchgov_style will include a specific version of `rubocop` and related gems (such as `rubocop-rspec`) that is shared across all projects.
+You do not need to include rubocop directly in your application's dependencies. searchgov_style will include specific versions of `rubocop` and related gems (such as `rubocop-rspec`) that are shared across all projects.
 
 Refer to the [Rubocop documentation](https://docs.rubocop.org/) for Rubocop usage instructions.
 
 ## Development
 
-[tbd]
+Install the development gems:
+
+    $ bundle
+
+Run Rubocop on the gem repository itself:
+
+    $ rubocop
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/searchgov_style.
-
 
 ## License
 
