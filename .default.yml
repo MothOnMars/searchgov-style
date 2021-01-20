@@ -57,7 +57,6 @@ Metrics/BlockLength:
     - include_context
     - shared_examples_for
 
-
 #### Performance ####
 
 Performance/TimesMap:
