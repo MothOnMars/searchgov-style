@@ -8,7 +8,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group :test, :development do
-  gem 'searchgov_style'
+  gem 'searchgov_style', require: false
 end
 ```
 
@@ -29,6 +29,21 @@ inherit_gem:
   searchgov_style:
     - .default.yml
 ```
+
+Unfortunately, Code Climate [does not support](https://github.com/codeclimate/codeclimate-rubocop/issues/71#issuecomment-635055223) the `inherit_gem` directive. Repos using Code Climate can instead inherit from the gem's raw `.default.yml` file. Example from the [search-gov](https://github.com/GSA/search-gov) repo:
+```
+# .rubocop.yml
+inherit_from:
+  - https://raw.githubusercontent.com/GSA/searchgov_style/main/.default.yml
+```
+```
+# .codeclimate.yml
+prepare:
+  fetch:
+    - url: https://raw.githubusercontent.com/GSA/searchgov_style/main/.default.yml
+      path: .rubocop-https---raw-githubusercontent-com-GSA-searchgov-style-main--default-yml 
+```
+
 
 Now, run:
 
