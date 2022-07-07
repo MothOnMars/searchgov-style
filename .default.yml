@@ -15,6 +15,7 @@ AllCops:
 
 #### Bundler ####
 
+# testing
 Bundler/OrderedGems:
   Enabled: false
 
